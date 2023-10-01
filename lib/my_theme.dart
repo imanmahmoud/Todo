@@ -7,7 +7,6 @@ class MyTheme {
   static Color navyColor = Color(0xFF060E1E);
   static Color whiteColor = Color(0xFFFFFFFF);
   static Color liteNavyColor = Color(0xFF141922);
-
   static Color greyColor = Color(0xFFC8C9CB);
   static Color greenColor = Color(0xFF61E757);
   static Color blackColor = Color(0xFF383838);
