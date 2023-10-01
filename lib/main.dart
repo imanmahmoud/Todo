@@ -4,6 +4,7 @@ import 'package:todo/my_theme.dart';
 import 'package:todo/providers/settings_provider.dart';
 import 'package:todo/screens/home/home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:todo/screens/splash_screen/splash_screen.dart';
 
 
 void main() {
@@ -19,9 +20,10 @@ class MyApp extends StatelessWidget {
     var settingsProvider= Provider.of<SettingsProvider>(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
-        HomeScreen.routeName: (_) => const HomeScreen()
+        HomeScreen.routeName: (_) => const HomeScreen(),
+        SplashScreen.routeName : (_)=> const SplashScreen()
       },
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
