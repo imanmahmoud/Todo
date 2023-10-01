@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/screens/home/home_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
 void main() {
@@ -14,10 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute:HomeScreen.routeName ,
-      routes:{
-        HomeScreen.routeName : (_)=> const HomeScreen(),
+      initialRoute: HomeScreen.routeName,
+      routes: {
+        HomeScreen.routeName: (_) => const HomeScreen()
       },
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
 
     );
+  }
 }

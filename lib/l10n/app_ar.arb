@@ -1,0 +1,14 @@
+{
+  "app_title": "To Do List",
+  "new_task" : "إضافة مهمة جديدة",
+  "task_title_label" : "أدخل مهمتك",
+  "date_label" : "حدد تاريخ",
+  "edit_task" : "تعديل المهمة",
+  "settings": "الاعدادات",
+  "theme": "النمط",
+  "language": "اللغة",
+  "english": "English",
+  "arabic": "العربية",
+  "light": "مضىء",
+  "dark": "ليلي"
+}

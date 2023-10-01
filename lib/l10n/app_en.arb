@@ -1,0 +1,14 @@
+{
+  "app_title": "To Do List",
+  "new_task" : "Add new Task",
+  "task_title_label" : "enter your task",
+  "date_label" : "select date",
+  "edit_task" : "Edit Task",
+  "settings": "Settings",
+  "theme": "Theme",
+  "language": "Language",
+  "english": "English",
+  "arabic": "العربية",
+  "light": "Light",
+  "dark": "Dark"
+}
