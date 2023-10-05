@@ -10,11 +10,15 @@ class MyTheme {
   static Color greyColor = Color(0xFFC8C9CB);
   static Color greenColor = Color(0xFF61E757);
   static Color blackColor = Color(0xFF383838);
+  static Color redColor = Color(0xFFEC4B4B);
+
   /*static Color greyyColor = Color(0xFFA9A9A9);*/
 
   static ThemeData lightTheme = ThemeData(
       scaffoldBackgroundColor: mintGreenColor,
       primaryColor: blueColor,
+      colorScheme: ColorScheme.fromSeed(
+          seedColor: blueColor, secondary: whiteColor, onSecondary: liteNavyColor),
       appBarTheme: AppBarTheme(
           titleSpacing: 40,
           toolbarHeight: 60,
@@ -27,21 +31,18 @@ class MyTheme {
             fontSize: 22,
           )),
       textTheme: TextTheme(
-        titleMedium: GoogleFonts.poppins(
-            color: blackColor, fontWeight: FontWeight.w700, fontSize: 18),
-        titleSmall: GoogleFonts.poppins(
-            color: blackColor, fontWeight: FontWeight.w700, fontSize: 14),
-        labelLarge: GoogleFonts.inter(
-            color: greyColor, fontWeight: FontWeight.w400, fontSize: 20),
-        labelMedium: GoogleFonts.inter(
-            color: blueColor, fontWeight: FontWeight.w400, fontSize: 14),
-        labelSmall: GoogleFonts.inter(
-            color: blackColor, fontWeight: FontWeight.w400, fontSize: 18),
-        bodyLarge: GoogleFonts.poppins(
-            color: blueColor, fontWeight: FontWeight.w700, fontSize: 18),
-        bodyMedium: GoogleFonts.inter(
-            color: blackColor, fontWeight: FontWeight.w400, fontSize: 20)
-      ),
+          titleMedium: GoogleFonts.poppins(
+              color: blackColor, fontWeight: FontWeight.w700, fontSize: 18),
+          titleSmall: GoogleFonts.poppins(
+              color: blackColor, fontWeight: FontWeight.w700, fontSize: 14),
+          labelLarge: GoogleFonts.inter(
+              color: greyColor, fontWeight: FontWeight.w400, fontSize: 20),
+          labelMedium: GoogleFonts.inter(
+              color: blueColor, fontWeight: FontWeight.w400, fontSize: 14),
+          labelSmall: GoogleFonts.inter(
+              color: blackColor, fontWeight: FontWeight.w400, fontSize: 18),
+          bodyMedium: GoogleFonts.inter(
+              color: blackColor, fontWeight: FontWeight.w400, fontSize: 20)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -64,10 +65,17 @@ class MyTheme {
       bottomAppBarTheme: BottomAppBarTheme(
         shape: CircularNotchedRectangle(),
         color: whiteColor,
-      ));
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(blueColor))));
   static ThemeData darkTheme = ThemeData(
       scaffoldBackgroundColor: navyColor,
       primaryColor: blueColor,
+      colorScheme: ColorScheme.fromSeed(
+          seedColor: blueColor,
+          secondary: liteNavyColor,
+          onSecondary: whiteColor),
       appBarTheme: AppBarTheme(
           titleSpacing: 40,
           toolbarHeight: 60,
@@ -80,21 +88,18 @@ class MyTheme {
             fontSize: 22,
           )),
       textTheme: TextTheme(
-        titleMedium: GoogleFonts.poppins(
-            color: whiteColor, fontWeight: FontWeight.w700, fontSize: 18),
-        titleSmall: GoogleFonts.poppins(
-            color: whiteColor, fontWeight: FontWeight.w700, fontSize: 14),
-        labelLarge: GoogleFonts.inter(
-            color: greyColor, fontWeight: FontWeight.w400, fontSize: 20),
-        labelMedium: GoogleFonts.inter(
-            color: blueColor, fontWeight: FontWeight.w400, fontSize: 14),
-        labelSmall: GoogleFonts.inter(
-            color: whiteColor, fontWeight: FontWeight.w400, fontSize: 18),
-        bodyLarge: GoogleFonts.poppins(
-            color: blueColor, fontWeight: FontWeight.w700, fontSize: 18),
+          titleMedium: GoogleFonts.poppins(
+              color: whiteColor, fontWeight: FontWeight.w700, fontSize: 18),
+          titleSmall: GoogleFonts.poppins(
+              color: whiteColor, fontWeight: FontWeight.w700, fontSize: 14),
+          labelLarge: GoogleFonts.inter(
+              color: greyColor, fontWeight: FontWeight.w400, fontSize: 20),
+          labelMedium: GoogleFonts.inter(
+              color: blueColor, fontWeight: FontWeight.w400, fontSize: 14),
+          labelSmall: GoogleFonts.inter(
+              color: whiteColor, fontWeight: FontWeight.w400, fontSize: 18),
           bodyMedium: GoogleFonts.inter(
-              color: whiteColor, fontWeight: FontWeight.w400, fontSize: 20)
-      ),
+              color: whiteColor, fontWeight: FontWeight.w400, fontSize: 20)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -119,5 +124,8 @@ class MyTheme {
       bottomAppBarTheme: BottomAppBarTheme(
           shape: CircularNotchedRectangle(),
           color: liteNavyColor,
-          elevation: 4));
+          elevation: 4),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+              backgroundColor: MaterialStatePropertyAll(blueColor))));
 }
