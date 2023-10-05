@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:todo/my_theme.dart';
 import 'package:todo/screens/settings/settings_tab.dart';
 import 'package:todo/screens/tasks/Add_task_bottom_sheet.dart';
 import 'package:todo/screens/tasks/task_list.dart';
@@ -41,6 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ]),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      extendBody: true,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showAddBottomSheet();
@@ -48,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Icon(
           Icons.add,
           size: 35,
+          color:MyTheme.whiteColor,
         ),
       ),
       body: tabs[selectedIndex],

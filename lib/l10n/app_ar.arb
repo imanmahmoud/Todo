@@ -14,5 +14,6 @@
   "english": "English",
   "arabic": "العربية",
   "light": "مضىء",
-  "dark": "ليلي"
+  "dark": "ليلي",
+  "delete" : "حذف"
 }
