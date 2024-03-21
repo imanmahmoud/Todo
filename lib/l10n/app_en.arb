@@ -15,5 +15,6 @@
   "arabic": "العربية",
   "light": "Light",
   "dark": "Dark",
-  "delete" : "Delete"
+  "delete" : "Delete",
+  "save_changes" : "Save changes"
 }
