@@ -1,0 +1,20 @@
+{
+  "app_title": "To Do List",
+  "new_task" : "إضافة مهمة جديدة",
+  "task_title_label" : "أدخل اسم المهمة",
+  "task_title_error_message" : "خطأ!قم بادخال اسم المهمة",
+  "task_description_label" : "أدخل وصف المهمة",
+  "task_description_error_message" : "خطأ! قم بادخال وصف المهمة",
+  "date_label" : "حدد تاريخ",
+  "edit_task" : "تعديل المهمة",
+  "add" : "إضافة",
+  "settings": "الاعدادات",
+  "theme": "النمط",
+  "language": "اللغة",
+  "english": "English",
+  "arabic": "العربية",
+  "light": "مضىء",
+  "dark": "ليلي",
+  "delete" : "حذف",
+  "save_changes" : "حفظ"
+}
